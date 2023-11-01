@@ -28,7 +28,7 @@ app.post('/initiate-payment', (req, res) => {
         
     });
 
-    const token = jwt.sign({ paymentId }, process.env.SECRET_KEY, { expiresIn: '30s' }); //assign jwt token (Header, Payload, Signature)
+    const token = jwt.sign({ paymentId }, "f9b327e70bbcf42494ccb28b2d98e00e", { expiresIn: '30s' }); //assign jwt token (Header, Payload, Signature)
     res.send({ token, paymentId });
 });
 
