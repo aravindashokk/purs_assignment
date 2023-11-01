@@ -5,7 +5,7 @@ const cors = require('cors');
 const crypto = require("crypto");
 const authMiddleware = require('./middleware/authMiddleware');
 
-require('dotenv').config();
+require("dotenv").config();
 
 const app = express();
 app.use(bodyParser.json());
