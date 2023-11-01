@@ -15,7 +15,7 @@ function PaymentComponent() {
         };
 
         try {
-            const response = await axios.post('http://localhost:5000/initiate-payment', completePayment); //initate payment
+            const response = await axios.post('https://purs-assignment-server.vercel.app/initiate-payment', completePayment); //initate payment
             if (response.data.token) {
                 localStorage.setItem('paymentToken', response.data.token); //Local storage of token
                 window.location.href = `/payment-approval/${response.data.paymentId}`; 

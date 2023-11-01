@@ -15,7 +15,7 @@ function PaymentApproval(props) {
 
     const approvePayment = () => {
         const token = localStorage.getItem('paymentToken');
-        axios.post('http://localhost:5000/confirm-payment', {}, 
+        axios.post('https://purs-assignment-server.vercel.app/confirm-payment', {}, 
             { headers: { 'Authorization': `Bearer ${token}` } }
         )
         .then(response => {
