@@ -3,7 +3,7 @@ Steps to run this project:-
 
 ## Clone Repository
 
-Clone this repository to VSCode or equivalent source-code editor.Open two terminals side by side (using Split terminal).
+Clone this repository to VSCode or equivalent source-code editor. Open two terminals side by side (using Split terminal).
 
 ## Development server
 To run the server, navigate to purs_server using `cd purs_server`. Use `npm run devStart` to run the server and it will run automatically in PORT 5000
