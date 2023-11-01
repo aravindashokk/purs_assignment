@@ -14,7 +14,7 @@ app.use(cors());
 let payments = [];  
 
 app.get('/',(req,res) => {
-    res.send("Server is running");
+    res.send("Server is running.");
 })
 
 app.post('/initiate-payment', (req, res) => {
