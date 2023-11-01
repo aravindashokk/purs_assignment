@@ -13,6 +13,10 @@ app.use(cors());
 
 let payments = [];  
 
+app.get('/',(req,res) => {
+    res.send("Server is running");
+})
+
 app.post('/initiate-payment', (req, res) => {
     const { totalAmount, tip } = req.body;
     const paymentId = crypto.randomBytes(16).toString("hex");  //paymentId  random 32-char
